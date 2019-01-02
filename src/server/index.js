@@ -6,7 +6,6 @@ import TextBlock from "../components/textblock/textblock.js"
 var app=express();
 
 
-app.use(cors())
 
 app.get("*",(req,res)=>{
     res.send(`
