@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import {TextBlock} from "./components/textblock/textblock"
+import {TextBlock} from "../components/textblock/textblock"
 
 var Timepass=(props)=>{
   return (
