@@ -1,40 +1,11 @@
 
 const path = require("path")
 var express = require("express")
-var cors = require("cors")
-var express = require("express")
 var React = require("react")
 const ReactDOMServer = require('react-dom/server');
-//import { TextBlock } from '../components/textblock/textblock.js'
-//console.log(React)
+import {TextBlock} from "../components/textblock/textblock"
+
 var app = express();
-//app.set('view engine', 'ejs');
-//app.engine('html', require('ejs').renderFile);
-//app.use(express.static(path.join(__dirname, 'client')));
-
-class TextBlock extends React.Component {
-    constructor() {
-        super()
-        this.state = ({ count: 1 })
-    }
-    onComponentDidMount() {
-        console.log("the world ismine")
-
-    }
-    increment() {
-        this.setstate({ count: ++this.state.count })
-    }
-    getState() {
-        return this.state.count
-    }
-    render() {
-        return (
-            <div>
-                <div onClick={(e) => { this.increment() }} style={{ border: "solid red 2px" }}>{this.getState()}</div>
-            </div>
-        )
-    }
-}
 
 
 
