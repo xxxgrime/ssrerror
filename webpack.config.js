@@ -86,4 +86,4 @@ const browserConfig = {
   },
   plugins: [htmlPlugin]
 }
-module.exports = [serverConfig,browserConfig]
+module.exports =[browserConfig,serverConfig]
